@@ -8,6 +8,7 @@ Building this was a journey into Creative Development—learning how to balance 
 ## Project Structure :
 
 Portfolio-v2/
+
 ├── assets/               # High-res profile and background imagery [cite: 20, 24, 33]
 
 ├── index.html            # Semantic HTML5 architecture [cite: 4, 36]
