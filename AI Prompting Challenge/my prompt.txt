@@ -1,0 +1,125 @@
+Act as an expert Senior Frontend Developer and UI/UX Designer.
+I am a 2nd-year BCA student entering a Prompt Engineering competition.
+
+**Task:** Create a professional 4-page portfolio website (Home, About, Projects, Contact) inspired by the minimalist and bold aesthetic of 'Codewonders.dev'.
+
+**Technical Requirements:**
+1. **Stack:** Clean HTML5, CSS3 (using Modern CSS variables), and Vanilla JavaScript.
+2. **Design Language:** Dark-themed UI, high-contrast typography (Inter or Montserrat), subtle CSS animations, and a glassmorphism effect for cards.
+3. **Responsive:** Must be fully mobile-responsive with a hamburger menu.
+4. **Specific Features (Bonus Points):** - Implementation of a "Dark/Light Mode" toggle.
+   - Smooth scroll behavior and Intersection Observer API for "fade-in" animations.
+
+**Content Structure:**
+- **Home:** A hero section with a typewriter effect: "I am a BCA Student | Python Developer | Web Enthusiast."
+- **About:** A professional bio emphasizing my journey in BCA and passion for solving problems through code.
+- **Projects Page:** - Include 7 Python Projects (e.g., Task Automator, Weather App, Web Scraper, Desktop Assistant, Data Analyzer, Quiz Game, and a Password Manager).
+    - Include 1 Featured Excel Dashboard Project (Interactive Data Visualization).
+    - Each project needs a card with a title, description, 'Tech Stack' tags, and a GitHub link placeholder.
+- **Contact:** A functional-looking contact form and social media icons (GitHub, LinkedIn).
+
+**Output Instructions:**
+Please provide the code in separate blocks: `index.html`, `style.css`, and `script.js`. Ensure the code is well-commented so I can explain the AI workflow in my presentation.
+
+
+new prompt:
+
+Role: Senior Creative Developer & UI/UX Architect (GSAP, Modern Web, & Performance Specialist).
+
+Objective: Build a high-performance, 4-page responsive portfolio for a 2nd-year BCA student. The site must feature a global 3D-inspired background, a structured "Technical Projects Dashboard," and production-grade micro-interactions.
+
+1. Visual & Design System
+
+Theme: Modern Dark-Mode "Vaishnavi Yadav" Minimalist aesthetic.
+
+Design Elements: Glassmorphism (20px blur, 1px #ffffff15 border), high-contrast typography, and neomorphic glow effects.
+
+Color Palette: * Background: #080808 (Deep Onyx)
+
+Accent: #00FFC3 (Cyber Mint) for technical highlights and interactive elements.
+
+Text: #FFFFFF (Headlines), #A0A0A0 (Sub-text).
+
+Typography: 'Inter' for body text; 'Syne' or 'Montserrat' for bold, staggered headlines.
+
+2. Global Architecture & UI
+
+Dynamic 3D Background: Integrate the "Particle Nebula" Spline model as a fixed, full-screen background: 
+https://my.spline.design/logoreveal-tpdwBp9pdStLeWaIBtHhhgxg/
+
+Interactive Background: Fixed, full-screen dark particle system (using a lightweight script or CSS) that remains behind all content layers.
+
+Sticky Header: Glassmorphic navigation bar with a Dark/Light Mode toggle (using localStorage for persistence) and a mobile hamburger menu.
+
+Scroll Logic: Implement Smooth Scrolling (Locomotive style) and use the Intersection Observer API to trigger "fade-and-rise" animations for every section.
+
+Sticky Footer: Minimalist bottom bar containing social links and a "Back to Top" trigger.
+
+Data Integration: Structure the "About" and "Experience" sections to be dynamically populated using a LinkedIn Profile as the source of truth for bio, roles, and project details.
+
+3. Component Architecture
+
+[Phase 1: Cinematic Preloader]
+Logic: GSAP width 0% to 100% on a 2px #EFD30B bar.
+
+Visual: Center "Milad" logo in #1A1A19 on a #F9F8F4 background.
+
+Exit: Vertical split-screen wipe to reveal the 3D-backed interface.
+
+
+[Phase 1: Cinematic Hero]
+
+
+Micro-Interaction: A 'Magnetic' CTA button with a pulsing #00FFC3 glow that subtly follows the cursor.
+
+Visual: Pure transparent background to fully showcase the global Nebula Spline model.
+
+Headline: "Hi, Iâ€™️m Milad â€“ Web Developer". Use GSAP SplitText for a staggered character reveal (y: 50 to 0).
+
+CTA: Neumorphic button with a pulsing #F9BE08 glow effect.
+
+
+[Phase 2: About Section]
+
+Layout: Two-column dashboard grid .
+
+Profile Frame: A dedicated slot on the left for a Profile Photo inside a glowing #F9BE08 circular frame.
+
+Content: Detailed professional bio and career milestones extracted from the LinkedIn reference.
+
+Skills: A staggered grid of Phosphor Icons (Light style).
+
+
+
+[Phase 3: Projects Dashboard]
+
+Logic: A responsive 3-column grid featuring 7 Python Projects and 1 Excel Dashboard.
+
+Interactivity: Cards must use a 3D tilt effect on hover and provide clear links to GitHub/Live demos.
+
+Asset Logic: Use high-quality Unsplash placeholder URLs for thumbnails.
+
+Cards: A responsive 3-column grid 8 Glassmorphic cards using 10% opacity #DFDFD9 and high backdrop-filter: blur.
+
+
+[Phase 4: Contact & Footer]
+
+Form: Transparent glassmorphic inputs with glowing focus states and JavaScript validation.
+
+Feedback: Show a glassmorphic "Success Toast" notification upon simulated submission.
+
+4. Technical Execution Rules
+
+Code Quality: Semantic HTML5, CSS Variables, and Vanilla JS. No heavy frameworks.
+
+Smooth Scroll: Implement Locomotive Scroll for the entire page.
+
+Performance: Implement Lazy Loading (loading="lazy") for all images and use force3D: true for GSAP transforms.
+
+Responsive Breakpoints: * 1024px: 2-column project grid.
+
+768px: 1-column stack; Navbar becomes a full-screen overlay menu.
+
+Accessibility: Ensure all interactive elements have aria-label tags.
+
+Documentation: Provide detailed comments for every major JS function to assist in the "Process Review" presentation

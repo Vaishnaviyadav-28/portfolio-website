@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishnavi Yadav | Web Developer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?css=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Locomotive Scroll CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+</head>
+
+<body data-theme="dark">
+  <!-- Custom Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-circle"></div>
+
+  <!-- Cinematic Preloader -->
+  <div class="preloader">
+    <div class="preloader-bg"></div>
+    <div class="preloader-content">
+      <div class="loader-ring-container">
+        <div class="loader-ring ring1"></div>
+        <div class="loader-ring ring2"></div>
+        <!-- <div class="loader-ring ring3"></div> -->
+      </div>
+      <h1 class="loader-logo">VY.</h1>
+    </div>
+  </div>
+
+  <!-- Global 3D Background -->
+  <div class="spline-container"></div>
+
+  <!-- Sticky Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Vaishnavi.</a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <i class="ph ph-sun"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content with Locomotive Scroll -->
+  <main data-scroll-container>
+    <!-- Phase 1: Cinematic Hero -->
+    <section class="hero" data-scroll-section id="home">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="sr-only">Hi, I'am Vaishnavi, Web Developer</span>
+          <div class="split-text" aria-hidden="true">Hi, I'am Vaishnavi</div>
+          <div class="split-text highlight" aria-hidden="true">
+            <span class="typed-text"></span>
+          </div>
+        </h1>
+        <a href="#projects" class="magnetic-btn cta-btn">
+          <span class="btn-text">View My Work</span>
+        </a>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div>
+          <span class="arrow-down"></span>
+          <span class="arrow-down"></span>
+          <span class="arrow-down"></span>
+        </div>
+      </a>
+
+      <a href="#contact" class="home-chat-btn">Let's chat! <i class="ph ph-arrow-right"></i></a>
+    </section>
+
+    <!-- Phase 2: About Section -->
+    <section class="about" data-scroll-section id="about">
+      <div class="container">
+        <h2 class="section-title fade-up">About Me</h2>
+        <div class="about-grid">
+          <div class="profile-column fade-up">
+            <div class="profile-frame">
+              <div class="glow-ring"></div>
+              <img src="assets/y1.jpeg" alt="Vaishnavi Yadav" class="profile-img" loading="lazy" />
+            </div>
+            <div class="profile-details">
+              <h3 class="profile-name">Vaishnavi Yadav</h3>
+              <p class="profile-title">SY-BCA Student</p>
+              <p class="profile-location">
+                <i class="ph ph-map-pin"></i> Maharashtra, India
+              </p>
+              <a href="https://github.com/Vaishnaviyadav-28" target="_blank" class="profile-github"
+                aria-label="GitHub Profile">
+                <i class="ph ph-github-logo"></i> @Vaishnaviyadav-28
+              </a>
+            </div>
+          </div>
+          <div class="about-content fade-up">
+            <div class="bio-block">
+              <p>
+                I find joy in turning blank screens into functional
+                experiences. My focus is on creating responsive, performant,
+                and visually engaging web applications.
+              </p>
+            </div>
+
+            <div class="bio-block highlights">
+              <h3>Current Focus</h3>
+              <ul class="skills-list">
+                <li>
+                  <i class="ph ph-code"></i>
+                  <strong>Core Logic:</strong> Python, Java, C & DSA
+                </li>
+                <li>
+                  <i class="ph ph-layout"></i>
+                  <strong>Frontend:</strong> React, HTML5, CSS3, JS
+                </li>
+                <li>
+                  <i class="ph ph-database"></i>
+                  <strong>Backend/Data:</strong> PHP, MongoDB, SQL
+                </li>
+              </ul>
+            </div>
+
+            <div class="bio-block cta-block">
+              <p>
+                <em>Always learning. I can apply these skills in the real
+                  world. Aspiring Developer.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certifications-wrapper fade-up">
+          <h3 class="cert-section-heading">
+            <i class="ph ph-seal-check"></i> Certifications
+          </h3>
+          <div class="cert-cards-grid">
+
+            <!-- Cert Card 1 — Cyber Security Virtual Internship -->
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-badge">
+                  <i class="ph ph-shield-check"></i>
+                </div>
+                <div class="cert-meta">
+                  <h4 class="cert-title">Cyber Security Virtual Internship</h4>
+                  <p class="cert-issuer">EduSkills Foundation &amp; AICTE &middot; Powered by Google Cloud</p>
+                  <p class="cert-date"><i class="ph ph-calendar-blank"></i> Jul – Sep 2025 &nbsp;·&nbsp; 10 Weeks</p>
+                </div>
+              </div>
+              <!-- Skills tags -->
+              <div class="cert-skills">
+                <span class="cert-skill-tag"><i class="ph ph-cloud"></i> Cloud Security</span>
+                <span class="cert-skill-tag"><i class="ph ph-lock"></i> Network Security</span>
+                <span class="cert-skill-tag"><i class="ph ph-warning"></i> Threat Management</span>
+                <span class="cert-skill-tag"><i class="ph ph-shield-warning"></i> Incident Response</span>
+              </div>
+              <!-- Credential ID -->
+              <p class="cert-credential-id">
+                <i class="ph ph-hash"></i> Credential ID: <span>8686e0907aabfb44e36b4e607fd5b7a6</span>
+              </p>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7436122755814752256/" target="_blank"
+                rel="noopener noreferrer" class="cert-verify-btn">
+                <i class="ph ph-linkedin-logo"></i> View on LinkedIn
+              </a>
+            </div>
+
+            <!-- Cert Card 2 — Learn Software Testing from Scratch with JIRA -->
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-badge">
+                  <i class="ph ph-bug"></i>
+                </div>
+                <div class="cert-meta">
+                  <h4 class="cert-title">Learn Software Testing from Scratch with JIRA</h4>
+                  <p class="cert-issuer">Udemy &middot; Instructor: Ajay Shembekar</p>
+                  <p class="cert-date"><i class="ph ph-calendar-blank"></i> Mar 7, 2026 &nbsp;·&nbsp; 4.5 Hours</p>
+                </div>
+              </div>
+              <!-- Skills tags -->
+              <div class="cert-skills">
+                <span class="cert-skill-tag"><i class="ph ph-checklist"></i> Software Testing</span>
+                <span class="cert-skill-tag"><i class="ph ph-kanban"></i> JIRA</span>
+                <span class="cert-skill-tag"><i class="ph ph-magnifying-glass"></i> Quality Assurance</span>
+                <span class="cert-skill-tag"><i class="ph ph-flask"></i> Manual Testing</span>
+              </div>
+              <!-- Credential ID -->
+              <p class="cert-credential-id">
+                <i class="ph ph-hash"></i> Credential ID: <span>UC-1bf45ff0-af5d-41a7-80d5-ef163763f87f</span>
+              </p>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7436110824571744256/" target="_blank"
+                rel="noopener noreferrer" class="cert-verify-btn">
+                <i class="ph ph-linkedin-logo"></i> View on LinkedIn
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 3: Projects Dashboard -->
+    <section class="projects" data-scroll-section id="projects">
+      <div class="container">
+        <h2 class="section-title fade-up">Technical Projects Dashboard</h2>
+
+        <div class="projects-grid">
+
+          <!-- Project Card: Data Analysis Dashboard -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-chart-bar"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Data Analysis</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Data Analysis Dashboard</h3>
+              <p class="project-desc">
+                An interactive data analysis dashboard built to visualize and explore datasets with insightful charts,
+                graphs, and metrics — turning raw data into meaningful stories.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Data Visualization</span>
+                <span class="project-tag">Dashboard</span>
+                <span class="project-tag">Excel</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Data-Analysis-Dashboard" target="_blank"
+                  rel="noopener noreferrer" class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Data-Analysis-Dashboard/blob/main/Dashboard.png"
+                  target="_blank" rel="noopener noreferrer" class="project-btn project-btn--live"
+                  aria-label="View Live Preview">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live Preview</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 1: File Type Identifier -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-file-magnifying-glass"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">File Type Identifier</h3>
+              <p class="project-desc">
+                A Python script that scans a given directory and identifies all file types present — useful for
+                organizing and auditing folders quickly.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">File System</span>
+                <span class="project-tag">CLI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/File_Types" target="_blank"
+                  rel="noopener noreferrer" class="project-btn project-btn--live" aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 2: PDF Merger -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-file-pdf"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PDF Merger</h3>
+              <p class="project-desc">
+                Merges multiple PDF files into a single document using Python — a handy automation tool to streamline
+                document management workflows.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Automation</span>
+                <span class="project-tag">PDF</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/Merging_PDF" target="_blank"
+                  rel="noopener noreferrer" class="project-btn project-btn--live" aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 3: Password Security Checker -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-lock-key"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Password Security Checker</h3>
+              <p class="project-desc">
+                Analyzes password strength based on length, character variety, and patterns — helping users understand
+                and improve their digital security.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Security</span>
+                <span class="project-tag">CLI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/Password_Security"
+                  target="_blank" rel="noopener noreferrer" class="project-btn project-btn--live"
+                  aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 4: Q&A Quiz App -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-question"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Q&amp;A Quiz App</h3>
+              <p class="project-desc">
+                An interactive question-and-answer quiz application built in Python that tests knowledge and keeps score
+                — fun and educational!
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Interactive</span>
+                <span class="project-tag">CLI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/Q%20and%20A" target="_blank"
+                  rel="noopener noreferrer" class="project-btn project-btn--live" aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 5: Snake Water Gun Game -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-game-controller"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Snake Water Gun Game</h3>
+              <p class="project-desc">
+                A Python twist on Rock-Paper-Scissors using Snake, Water, and Gun — a fun command-line game showcasing
+                conditional logic and randomness.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Game</span>
+                <span class="project-tag">CLI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/Snake%20_Water%20_Gun%20_Game"
+                  target="_blank" rel="noopener noreferrer" class="project-btn project-btn--live"
+                  aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 6: Typing Speed Test -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-keyboard"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Typing Speed Test</h3>
+              <p class="project-desc">
+                Measures typing speed in WPM (words per minute) by timing how fast the user can accurately type a given
+                passage — a GUI-based application.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">GUI</span>
+                <span class="project-tag">Tkinter</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/Typing_Test" target="_blank"
+                  rel="noopener noreferrer" class="project-btn project-btn--live" aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Project Card 7: Water Drinking Reminder -->
+          <div class="project-card fade-up" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+            data-tilt-max-glare="0.2">
+            <div class="project-img-wrapper project-img-wrapper--icon">
+              <div class="project-icon-display">
+                <i class="ph ph-drop"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Water Drinking Reminder</h3>
+              <p class="project-desc">
+                A desktop automation tool that sends periodic reminders to drink water — helping build healthy habits
+                through Python's scheduling and notification APIs.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Automation</span>
+                <span class="project-tag">Desktop</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects" target="_blank" rel="noopener noreferrer"
+                  class="project-btn project-btn--github" aria-label="View on GitHub">
+                  <i class="ph ph-github-logo"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Vaishnaviyadav-28/Python_Projects/tree/main/Water_Drinking_Reminder"
+                  target="_blank" rel="noopener noreferrer" class="project-btn project-btn--live"
+                  aria-label="View Project Folder">
+                  <i class="ph ph-arrow-square-out"></i>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tech Stack Section (Below Projects) -->
+        <h2 class="section-title fade-up" style="margin-top: 6rem">
+          My Tech Stack
+        </h2>
+        <p class="techstack-intro fade-up">
+          This section presents a dynamic overview of my technical skill set, meticulously developed throughout my
+          academic journey. It reflects a highly useful mix of
+          <span class="text-highlight">core programming languages</span>,
+          <span class="text-highlight">full-stack web development skills</span>, and
+          <span class="text-highlight">essential tools for modern tech</span>.
+        </p>
+
+        <!-- Core Languages Section -->
+        <div class="core-lang-grid fade-up" style="margin-top: 2rem">
+          <!-- Category 1: Core Languages -->
+          <div class="core-lang-card">
+            <i class="ph ph-terminal-window"></i>
+            <h3>Core Languages</h3>
+            <ul class="category-list">
+              <li>Python</li>
+              <li>Java</li>
+              <li>PHP</li>
+              <li>C Programming</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Web & Database -->
+          <div class="core-lang-card">
+            <i class="ph ph-globe"></i>
+            <h3>Web & Database</h3>
+            <ul class="category-list">
+              <li>HTML, CSS, JS</li>
+              <li>Basics React</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Tools & Productivity -->
+          <div class="core-lang-card">
+            <i class="ph ph-wrench"></i>
+            <h3>Tools</h3>
+            <ul class="category-list">
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>Linux Basics</li>
+              <li>Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 4: Contact -->
+    <section class="contact" data-scroll-section id="contact">
+      <div class="container">
+        <div class="contact-wrapper fade-up">
+          <h2 class="section-title">Let's Chat!</h2>
+          <p class="contact-subtitle">
+            I love meeting other curious learners and tech enthusiasts. Reach
+            out if you want to share tips, talk about Web Dev, or just say hi!
+          </p>
+          <form id="contact-form" class="glass-form">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder="Your Name" />
+              <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required placeholder="Your Email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" required placeholder="Your Message" rows="4"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-scroll-section>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h2 class="nav-logo glow-text">Vaishnavi.</h2>
+            <p>Crafting digital experiences with precision and creativity.</p>
+          </div>
+          <div class="footer-links-group">
+            <h3>Quick Links</h3>
+            <nav class="footer-nav">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+          <div class="footer-socials">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="https://github.com/Vaishnaviyadav-28" target="_blank" aria-label="GitHub"><i
+                  class="ph ph-github-logo"></i></a>
+              <a href="https://www.linkedin.com/in/vaishnavi-yadav-76252830a/" target="_blank" aria-label="LinkedIn"><i
+                  class="ph ph-linkedin-logo"></i></a>
+              <a href="mailto:vaishnaviyadav2704@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2026 Vaishnavi Yadav. All rights reserved.
+          </p>
+          <button class="back-to-top" aria-label="Back to Top">
+            <i class="ph ph-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Success Toast -->
+  <div class="toast" id="success-toast" aria-hidden="true">
+    <i class="ph ph-check-circle"></i> Message sent successfully!
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Vanilla Tilt for 3D Cards -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
