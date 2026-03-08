@@ -68,6 +68,6 @@ Mobile-First: The site adapts gracefully from a 3-column desktop grid to a singl
 
 ##📫 Reach OutI love meeting other curious learners and tech enthusiasts. Whether you want to talk Python, Web Dev, or just say hi, my door is always open.
 
-LinkedIn: Vaishnavi Yadav
+LinkedIn :<a href="https://www.linkedin.com/in/vaishnavi-yadav-76252830a/">Vaishnavi Yadav</a>
 
-GitHub: @Vaishnaviyadav-28 
+GitHub:<a href="https://github.com/Vaishnaviyadav-28"> @Vaishnaviyadav-28</a> 
