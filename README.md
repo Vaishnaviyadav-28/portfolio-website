@@ -9,13 +9,13 @@ Building this was a journey into Creative Development—learning how to balance 
 
 Portfolio-v2/
 
-├── assets/               # High-res profile and background imagery [cite: 20, 24, 33]
+├── assets/                    # High-res profile and background imagery [cite: 20, 24, 33]
 
-├── index.html            # Semantic HTML5 architecture [cite: 4, 36]
+├── index.html                 # Semantic HTML5 architecture [cite: 4, 36]
 
-├── style.css             # Glassmorphic Design System & Global Variables [cite: 5, 21, 36]
+├── style.css                  # Glassmorphic Design System & Global Variables [cite: 5, 21, 36]
 
-└── main.js               # GSAP animations & Interactive Scroll logic [cite: 19, 26, 36]
+└── main.js                    # GSAP animations & Interactive Scroll logic [cite: 19, 26, 36]
 
 
 ## 🧠 The "Why" Behind the Design :
