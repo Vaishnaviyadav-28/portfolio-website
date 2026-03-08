@@ -9,8 +9,11 @@ Building this was a journey into Creative Development—learning how to balance 
 
 Portfolio-v2/
 ├── assets/               # High-res profile and background imagery [cite: 20, 24, 33]
+
 ├── index.html            # Semantic HTML5 architecture [cite: 4, 36]
+
 ├── style.css             # Glassmorphic Design System & Global Variables [cite: 5, 21, 36]
+
 └── main.js               # GSAP animations & Interactive Scroll logic [cite: 19, 26, 36]
 
 
@@ -63,5 +66,7 @@ Mobile-First: The site adapts gracefully from a 3-column desktop grid to a singl
 
 
 ##📫 Reach OutI love meeting other curious learners and tech enthusiasts. Whether you want to talk Python, Web Dev, or just say hi, my door is always open.
+
 LinkedIn: Vaishnavi Yadav
+
 GitHub: @Vaishnaviyadav-28 
